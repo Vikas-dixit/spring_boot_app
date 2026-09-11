@@ -1,0 +1,1 @@
+package com.dixitdada.journalApp.dto; public record AuthResponse(String token,String username){}

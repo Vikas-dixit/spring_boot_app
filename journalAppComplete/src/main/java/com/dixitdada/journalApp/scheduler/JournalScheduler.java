@@ -1,0 +1,1 @@
+package com.dixitdada.journalApp.scheduler; import lombok.extern.slf4j.Slf4j; import org.springframework.scheduling.annotation.Scheduled; import org.springframework.stereotype.Component; @Component @Slf4j public class JournalScheduler { @Scheduled(cron="${app.scheduler.cron:0 0 9 * * *}") public void daily(){log.info("Daily journal scheduler tick");} }

@@ -1,0 +1,1 @@
+package com.dixitdada.journalApp.service; import lombok.RequiredArgsConstructor; import org.springframework.kafka.core.KafkaTemplate; import org.springframework.stereotype.Service; @Service @RequiredArgsConstructor public class KafkaEventService { private final KafkaTemplate<String,String> kafka; public void publish(String topic,String msg){kafka.send(topic,msg);} }

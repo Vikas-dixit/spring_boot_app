@@ -1,0 +1,1 @@
+package com.dixitdada.journalApp.api.response; import com.fasterxml.jackson.annotation.JsonIgnoreProperties; @JsonIgnoreProperties(ignoreUnknown=true) public record WeatherResponse(Current current){@JsonIgnoreProperties(ignoreUnknown=true) public record Current(double temperature_2m,double wind_speed_10m){}}
